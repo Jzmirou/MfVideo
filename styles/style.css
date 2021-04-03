@@ -588,7 +588,7 @@ ul {
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
-    gap: 30px;
+    
     width: 400px;
     margin: auto;
 }
@@ -604,11 +604,19 @@ ul {
 .contact__info__logo {
     width: 85px;
     height: 85px;
-    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffcc33;
+    color: #fff;
+    font-size: 28px;
     border-radius: 5px 50% 50% 50%;
     margin: 0 20px;
     transition: background-color 0.3s;
+}
+.contact__info__logo:hover {
+    background-color: #6f6f6f;
 }
 .info__logo2 {
     border-radius:  50% 5px 50% 50%;
