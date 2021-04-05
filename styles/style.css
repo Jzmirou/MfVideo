@@ -502,7 +502,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    
     border-left: 1px solid #d3d3d3;
     cursor: pointer;
     text-align: center;
@@ -538,6 +538,9 @@ ul {
     margin: 30px auto;
     gap: 40px;
     place-items: center;
+}
+.main__partenaire__content img{
+    width: 100%;
 }
 
 .main__equipe__content {
@@ -617,9 +620,8 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100%;
-    
-    width: 400px;
+    height: 100%;  
+    max-width: 400px;
     margin: auto;
 }
 .contact__info__container {
