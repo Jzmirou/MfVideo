@@ -733,6 +733,9 @@ ul {
     }
 }
 @media only screen and (max-width: 1024px) {
+    .header__navbar {
+        display: none;
+    }
     .main__about__content {
         grid-template-columns: 1fr;
     }
