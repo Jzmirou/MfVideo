@@ -300,7 +300,7 @@ ul {
 .main__service__content {
     display: flex;
     padding: 20px;
-    transition: transform .8s ease;
+    transition: transform .8s cubic-bezier(0.25, 0.45, 0.45, 0.95); ;
 }
 .main__service.isVisible .main__service__content {
     transform: translate(0,0);
@@ -345,14 +345,47 @@ ul {
     max-width: 1240px;
     margin: auto;
     padding: 20px;
-    column-gap: 30px;
-    row-gap: 30px;
+    gap: 50px;
+    
+}
+.main__service2.isVisible .main__service2__card--wrapper {
+    opacity: 1;
 }
 
 .main__service2__card--wrapper {
     height: 220px;
     overflow: hidden;
     position: relative;
+    transition: opacity .5s ease;
+    opacity: 0;
+}
+
+.main__service2__card--wrapper:nth-child(1) {
+   transition-delay: .2s;
+}
+.main__service2__card--wrapper:nth-child(2) {
+    transition-delay: .4s;
+}
+.main__service2__card--wrapper:nth-child(3) {
+    transition-delay: .6s;
+}
+.main__service2__card--wrapper:nth-child(4) {
+    transition-delay: .8s;
+}
+.main__service2__card--wrapper:nth-child(5) {
+    transition-delay: 1s;
+}
+.main__service2__card--wrapper:nth-child(6) {
+    transition-delay: 1.2s;
+}
+.main__service2__card--wrapper:nth-child(7) {
+    transition-delay: 1.4s;
+}
+.main__service2__card--wrapper:nth-child(8) {
+    transition-delay: 1.6s;
+}
+.main__service2__card--wrapper:nth-child(9) {
+    transition-delay: 1.8s;
 }
 
 .main__service2__card--wrapper:hover .card--front {
@@ -524,8 +557,8 @@ ul {
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    top: 40px;
-    left: 40px;
+    top: 10%;
+    left: 10%;
     padding: 40px;
     color: rgb(211, 211, 211);
     background-color: rgba(0, 0, 0, 0.253);
@@ -842,5 +875,10 @@ ul {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+}
+@media only screen and (max-width: 440px) {
+    .main__about__content__banner h3 {
+        padding: 20px;
+        font-size: 18px;
+    }
 }
