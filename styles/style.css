@@ -341,7 +341,7 @@ ul {
 
 .main__service2__cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 1240px;
     margin: auto;
     padding: 20px;
