@@ -511,7 +511,7 @@ ul {
     position: relative;
 }
 
-.main__about__content__banner img {
+.main__about__content__banner video {
     width: 100%;
     height: 100%;
     object-fit: cover;
